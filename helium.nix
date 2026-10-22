@@ -70,7 +70,7 @@
 
 let
   pname = "helium";
-  version = "0.19.4.1";
+  version = "0.20.1.1";
 
   suffix = {
     aarch64-linux = "arm64";
@@ -80,8 +80,8 @@ let
   src = fetchurl {
     url = "https://github.com/imputnet/helium-linux/releases/download/${version}/helium-bin_${version}-1_${suffix}.deb";
     sha256 = {
-      aarch64-linux = "sha256-Sw3B/eSlUQvRfLCB9lDQUBuLgOqOfazT9oypei3ot7Y=";
-      x86_64-linux = "sha256-5aIorhxsKpteyE8dqwCsnuSmZQGo62IjTcYU+MnLW5w=";
+      aarch64-linux = "sha256-vidN6irshEvOv4VpYJpBWeJlSE4DSTdINSQJzB7j8+g=";
+      x86_64-linux = "sha256-HLpZpTAxuGYhbYV4DJBo1x4xiiXhlgJ1LZ46ReGT+l4=";
     }.${stdenv.hostPlatform.system};
   };
 
